@@ -1,0 +1,21 @@
+<fieldset>
+  <legend>PowerComponent</legend>
+    <h1>Initial Power Level:</h1>
+    <form (submit)="onSubmit()">
+      <input name="number" type="number" min="1" max="100" [(ngModel)]="power.power" >
+      <input type="submit" value="Reset Powers">
+    </form>
+
+    <app-hobbit [power]="power.power"></app-hobbit>
+
+    <app-dwarf [power]="power.power"></app-dwarf>
+
+    <app-human [power]="power.power"></app-human>
+
+    <app-woodelf [power]="power.power"></app-woodelf>
+
+    <app-orc [power]="power.power"></app-orc>
+
+    <app-wizard [power]="power.power">"</app-wizard>
+
+</fieldset>
